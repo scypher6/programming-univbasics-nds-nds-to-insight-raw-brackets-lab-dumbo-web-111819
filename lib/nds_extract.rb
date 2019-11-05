@@ -4,9 +4,9 @@ require 'directors_database'
 def directors_totals(nds)
   db = nds
   result = {}
-  gross_sales = 0
 
   db.size.times do |odex|
+      gross_sales = 0         #Set, reset gross sales
       db[odex][:movies].size.times do |index|
           gross_sales += db[odex][:movies][index][:worldwide_gross]
       end #INNER loop
