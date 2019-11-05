@@ -13,4 +13,6 @@ def directors_totals(nds)
       key = db[odex][:name]
       result[key] = gross_sales
   end #OUTTER lop
+  
+  result
 end
